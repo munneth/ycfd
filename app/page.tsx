@@ -6,7 +6,7 @@ export default function Home() {
       <main className="flex min-h-screen w-full flex-col items-center justify-center py-32 px-16">
         <Image
           src="/logo.png"
-          alt="Yuba City Fire Department Logo"
+          alt="ycfd logo"
           width={300}
           height={300}
           priority
