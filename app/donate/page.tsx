@@ -65,24 +65,6 @@ export default function Donate() {
             </svg>
             Instagram
           </a>
-
-          {/* Divider */}
-          <div className="my-6 border-t border-gray-600"></div>
-
-          {/* Other Links */}
-          <Link
-            href="/about"
-            className="flex w-full items-center justify-center rounded-lg bg-gray-800 px-6 py-4 text-white font-semibold hover:bg-gray-700 transition-colors"
-          >
-            ℹ️ About Us
-          </Link>
-
-          <Link
-            href="/contact"
-            className="flex w-full items-center justify-center rounded-lg bg-gray-800 px-6 py-4 text-white font-semibold hover:bg-gray-700 transition-colors"
-          >
-            📞 Contact
-          </Link>
         </div>
 
         {/* Footer */}
