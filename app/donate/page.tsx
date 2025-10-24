@@ -17,11 +17,9 @@ export default function Donate() {
 
         {/* Title */}
         <h1 className="text-3xl font-bold text-white text-center mb-2">
-          Yuba City Fire Department
+          Yuba City Firefighters
         </h1>
-        <p className="text-gray-300 text-center mb-8">
-          Support Your Local Fire Department
-        </p>
+        <p className="text-gray-300 text-center mb-8">Local 3793</p>
 
         {/* Link Tree */}
         <div className="w-full space-y-4">
