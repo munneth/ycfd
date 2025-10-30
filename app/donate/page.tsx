@@ -25,7 +25,7 @@ export default function Donate() {
         <div className="w-full space-y-4">
           {/* Donation Link */}
           <a
-            href="#"
+            href="https://www.venmo.com/u/YCFD-Local3793"
             className="flex w-full items-center justify-center rounded-lg bg-[#008CFF] px-6 py-4 text-white font-semibold hover:bg-[#0077D6] transition-colors"
           >
             <span className="text-2xl mr-2">V</span>
