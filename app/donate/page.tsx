@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Donate() {
+  const [showMore, setShowMore] = useState(false);
   return (
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-[#1e3a5f] via-[#2d4a6e] to-[#c41e3a]">
       <main className="flex min-h-screen w-full max-w-md md:max-w-4xl flex-col items-center justify-center py-16 px-8">
@@ -25,9 +29,18 @@ export default function Donate() {
           <p className="mb-4">
             The Yuba City Firefighters Association represents the dedicated men and women of the Yuba City Fire Department, working to protect the community while supporting its members.
           </p>
-          <p>
-            Founded alongside the department&apos;s long history of service dating back to 1908, the association plays a vital role in advocating for firefighters&apos; professional interests, safety, and training. The Yuba City Fire Department provides fire suppression, emergency medical services, and risk reduction programs to residents of Yuba City and surrounding Sutter County, emphasizing prevention and public education. Through the association, firefighters build strong community ties, participate in charitable events, and collaborate with statewide organizations such as the California Professional Firefighters union, which unites local affiliates across the region, as well as the International Association of Firefighters. The Yuba City Firefighters Association thus serves as both a guardian of public safety and a voice for the firefighters who risk their lives daily, ensuring they have the resources, representation, and community support needed to carry out their mission.
-          </p>
+          <button
+            onClick={() => setShowMore(!showMore)}
+            className="text-blue-300 hover:text-blue-200 underline text-base font-medium transition-colors mb-4 cursor-pointer block mx-auto"
+            type="button"
+          >
+            {showMore ? "See less..." : "See more..."}
+          </button>
+          {showMore && (
+            <p className="mb-4">
+              Founded alongside the department&apos;s long history of service dating back to 1908, the association plays a vital role in advocating for firefighters&apos; professional interests, safety, and training. The Yuba City Fire Department provides fire suppression, emergency medical services, and risk reduction programs to residents of Yuba City and surrounding Sutter County, emphasizing prevention and public education. Through the association, firefighters build strong community ties, participate in charitable events, and collaborate with statewide organizations such as the California Professional Firefighters union, which unites local affiliates across the region, as well as the International Association of Firefighters. The Yuba City Firefighters Association thus serves as both a guardian of public safety and a voice for the firefighters who risk their lives daily, ensuring they have the resources, representation, and community support needed to carry out their mission.
+            </p>
+          )}
         </div>
 
         {/* Link Tree */}
