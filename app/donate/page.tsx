@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Donate() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-black">
+    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-[#1e3a5f] via-[#2d4a6e] to-[#c41e3a]">
       <main className="flex min-h-screen w-full max-w-md md:max-w-4xl flex-col items-center justify-center py-16 px-8">
         {/* Logo */}
         <Image
