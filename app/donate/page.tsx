@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Donate() {
   return (
@@ -26,6 +25,8 @@ export default function Donate() {
           {/* Donation Link */}
           <a
             href="https://www.venmo.com/u/YCFD-Local3793"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex w-full items-center justify-center rounded-lg bg-[#008CFF] px-6 py-4 text-white font-semibold hover:bg-[#0077D6] transition-colors"
           >
             <span className="text-2xl mr-2">V</span>
@@ -38,6 +39,8 @@ export default function Donate() {
           {/* Social Media Links */}
           <a
             href="https://www.facebook.com/YubaCityFireDept/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex w-full items-center justify-center rounded-lg bg-blue-600 px-6 py-4 text-white font-semibold hover:bg-blue-700 transition-colors"
           >
             <svg
@@ -52,6 +55,8 @@ export default function Donate() {
 
           <a
             href="https://www.instagram.com/yubacityfire/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex w-full items-center justify-center rounded-lg bg-pink-600 px-6 py-4 text-white font-semibold hover:bg-pink-700 transition-colors"
           >
             <svg
