@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "YCF Local 3793",
   description: "Support the Yuba City Fire Department",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
