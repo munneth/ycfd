@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Donate() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-black">
-      <main className="flex min-h-screen w-full max-w-md flex-col items-center justify-center py-16 px-8">
+      <main className="flex min-h-screen w-full max-w-md md:max-w-4xl flex-col items-center justify-center py-16 px-8">
         {/* Logo */}
         <Image
           src="/logo.png"
@@ -20,8 +20,18 @@ export default function Donate() {
         </h1>
         <p className="text-gray-300 text-center mb-8">Local 3793</p>
 
+        {/* Description */}
+        <div className="text-gray-300 mb-8 text-base leading-relaxed w-full max-w-md md:max-w-3xl px-4 text-center">
+          <p className="mb-4">
+            The Yuba City Firefighters Association represents the dedicated men and women of the Yuba City Fire Department, working to protect the community while supporting its members.
+          </p>
+          <p>
+            Founded alongside the department&apos;s long history of service dating back to 1908, the association plays a vital role in advocating for firefighters&apos; professional interests, safety, and training. The Yuba City Fire Department provides fire suppression, emergency medical services, and risk reduction programs to residents of Yuba City and surrounding Sutter County, emphasizing prevention and public education. Through the association, firefighters build strong community ties, participate in charitable events, and collaborate with statewide organizations such as the California Professional Firefighters union, which unites local affiliates across the region, as well as the International Association of Firefighters. The Yuba City Firefighters Association thus serves as both a guardian of public safety and a voice for the firefighters who risk their lives daily, ensuring they have the resources, representation, and community support needed to carry out their mission.
+          </p>
+        </div>
+
         {/* Link Tree */}
-        <div className="w-full space-y-4">
+        <div className="w-full max-w-md space-y-4">
           {/* Donation Link */}
           <a
             href="https://www.venmo.com/u/YCFD-Local3793"
